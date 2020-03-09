@@ -17,6 +17,10 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 {{/elementUI}}
 
+{{#vueListView}}
+import Listview from '@laomao800/vue-listview'
+{{/vueListView}}
+
 
 Component.registerHooks([
   'beforeRouteEnter',
@@ -33,6 +37,9 @@ if (process.env.NODE_ENV === 'development') {
 {{#elementUI}}
 Vue.use(ElementUI);
 {{/elementUI}}
+{{#vueListView}}
+Vue.use(Listview);
+{{/vueListView}}
 
 Vue.config.productionTip = false
 
