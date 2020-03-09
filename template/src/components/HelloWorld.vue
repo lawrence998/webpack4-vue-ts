@@ -19,6 +19,10 @@ import TestMixin from '../mixins/test-mixin'
 import { Getter } from 'vuex-class'
 {{/vuex}}
 
+{{#mockjs}}
+import {login} from "../service/getData";
+{{/mockjs}}
+
 @Component({
   components: {
     RC
@@ -34,7 +38,15 @@ export default class HelloWorld extends Vue<TestMixin> {
   mounted () {
     console.log('这是 _.assign({})', _.assign({}))
     console.log('from mixin', this.testMixinArg)
+    console.log('vuex-info', this.info);
   }
+
+  {{#mockjs}}
+  created() {
+    const res = await login();
+    console.log('mock-res: ', res);
+  }
+  {{/mockjs}}
 }
 </script>
 

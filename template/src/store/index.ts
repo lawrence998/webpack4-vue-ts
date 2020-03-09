@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
+import Vuex, { ActionTree, MutationTree } from 'vuex'
 
 import user from './modules/user'
 

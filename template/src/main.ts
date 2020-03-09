@@ -4,12 +4,35 @@
 {{/if_eq}}
 import Vue from 'vue'
 import App from './App'
+import Component from 'vue-class-component';
 {{#router}}
 import router from './router'
 {{/router}}
 {{#router}}
 import store from './store'
 {{/router}}
+
+{{#elementUI}}
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+{{/elementUI}}
+
+
+Component.registerHooks([
+  'beforeRouteEnter',
+  'beforeRouteLeave',
+  'beforeRouteUpdate',
+]);
+
+{{#mockjs}}
+if (process.env.NODE_ENV === 'development') {
+  import ('./assets/mock')
+}
+{{/mockjs}}
+
+{{#elementUI}}
+Vue.use(ElementUI);
+{{/elementUI}}
 
 Vue.config.productionTip = false
 
