@@ -7,7 +7,7 @@ export default async (url='', data={}, type='GET', ParameterType = 'data', optio
   type = type.toLowerCase();
 
   interface Config {
-    method: string,
+    method: any,
     url: string,
     params?: Object,
     ParameterType?: string

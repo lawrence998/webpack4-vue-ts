@@ -26,6 +26,9 @@
     {{#elementUI}}
     "element-ui": "^2.13.0",
     {{/elementUI}}
+    {{#vueListView}}
+    "@laomao800/vue-listview": "^1.2.12",
+    {{/vueListView}}
     "lodash": "^4.17.4",
     "vue": "^2.5.2",
     "vue-class-component": "^6.0.0",
@@ -34,6 +37,8 @@
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
+    "axios": "^0.19.2",
+    "@types/node": "^13.9.0",
     {{#lint}}
     "babel-eslint": "^8.2.2",
     {{/lint}}
@@ -109,7 +114,7 @@
     "tslint-loader": "^3.5.3",
     "typescript-eslint-parser": "^14.0.0",
     {{/lint}}
-    "typescript": "^2.9.2",
+    "typescript": "^3.7.3",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "url-loader": "^0.5.8",
     "vue-loader": "^15.2.4",
