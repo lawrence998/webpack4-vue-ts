@@ -19,10 +19,14 @@
     "lodash": "^4.17.4",
     "vue": "^2.5.2",
     "vue-class-component": "^6.0.0",
-    "vue-property-decorator": "^6.0.0"{{#router}},
-    "vue-router": "^3.0.1"{{/router}}{{#vuex}},
+    "vue-property-decorator": "^6.0.0",
+    {{#router}}
+    "vue-router": "^3.0.1",
+    {{/router}}
+    {{#vuex}}
     "vuex": "^3.0.1",
-    "vuex-class": "^0.3.0"{{/vuex}},
+    "vuex-class": "^0.3.0",
+    {{/vuex}}
     {{#elementUI}}
     "element-ui": "^2.13.0",
     {{/elementUI}}
