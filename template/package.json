@@ -28,7 +28,7 @@
     "vuex-class": "^0.3.0",
     {{/vuex}}
     {{#elementUI}}
-    "element-ui": "^2.13.0",
+    "element-ui": "^2.13.0"
     {{/elementUI}}
   },
   "devDependencies": {
@@ -126,12 +126,12 @@
     {{/mockjs}}
     {{#stylus}}
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
+    "stylus-loader": "^3.0.2"
     {{/stylus}}
     {{#less}}
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
-    "node-less": "^1.0.0",
+    "node-less": "^1.0.0"
     {{/less}}
   },
   "engines": {
