@@ -40,7 +40,7 @@
     // 如何处理模块
     "moduleResolution": "node",
     // 在表达式和声明上有隐含的any类型时报错
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors":true,
     "lib": [
       "dom",
