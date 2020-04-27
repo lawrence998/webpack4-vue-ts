@@ -64,6 +64,10 @@ module.exports = {
       type: 'confirm',
       message: 'Install element-ui?'
     },
+    vueListView: {
+      type: 'confirm',
+      message: 'Install vue-list-view?'
+    },
     stylus: {
       type: 'confirm',
       message: 'Install stylus?'
@@ -102,7 +106,8 @@ module.exports = {
     "src/css/min.scss": "isMobile",
     "static/js/lib-flexible.js": "isMobile",
     'src/store/**/*': 'vuex',
-    'src/assets/mock/**/*': 'mockjs'
+    'src/assets/mock/**/*': 'mockjs',
+    'src/components/vueList.vue': 'vueListView'
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
