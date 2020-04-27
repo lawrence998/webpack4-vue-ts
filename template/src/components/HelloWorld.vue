@@ -42,7 +42,7 @@ export default class HelloWorld extends Vue<TestMixin> {
   }
 
   {{#mockjs}}
-  created() {
+  async created() {
     const res = await login();
     console.log('mock-res: ', res);
   }
